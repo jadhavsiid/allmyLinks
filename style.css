@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grey-900: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --portfolio: #d90429;
+    --github: #24292e;
+    --linkedin: #0a66c2;
+    --x: #15202b;
+    --email: #370617;
+}
+body{
+  height: 100vh;
+  background-color: var(--grey-900);
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+.container{
+    /* border: 1px solid var(--white); */
+    border-radius: 2rem;
+    width: 50%;
+    margin: 0.5rem auto;
+    overflow:auto;
+}
+#img-container{
+    /* border: 1px solid gold; */
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+#img-container img{
+    height: auto;
+    width: 6rem;
+}
+#avatar-info{
+    /* border: 1px solid green; */
+    text-align: center;
+    margin-top: 0.5rem;
+}
+#avatar-info :nth-child(2){
+    color: var(--green);
+}
+#avatar-info :nth-child(3){
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+#link-container{
+    /* border: 1px solid red; */
+    margin-top: 1.5rem;
+}
+#link-container a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+}
+.btn{
+    display: block;
+    width: 60%;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    margin: 1rem auto;
+    padding: 1rem 3rem;
+    transition: all 0.3s ease-in-out;
+}
+#portfolio:hover{
+    background-color: var(--portfolio);
+    border: 1pxx solid var(--portfolio);
+    transform: scale(1.1);
+}
+#resume:hover{
+    background-color: var(--white);
+    color: black;
+    transform: scale(1.1);
+}
+#github:hover{
+    background-color: var(--github);
+    border: 1px solid var(--github);
+    transform: scale(1.1);
+}
+#linked-in:hover{
+    background-color: var(--linkedin);
+    border: 1px solid var(--linkedin);
+    transform: scale(1.1);
+}
+#x:hover{
+    background-color: var(--x);
+    border: 1px solid var(--x);
+    transform: scale(1.1);
+}
+#email:hover{
+    background-color: var(--email);
+    border: 1px solid var(--email);
+    transform: scale(1.1);
+}
+#good-bye{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width:600px) and (max-height:1400px){
+    body{
+        background-image: url('./images/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container{
+        backdrop-filter: blur(0px) saturate(98%);
+        -webkit-backdrop-filter: blur(0px) saturate(98%);
+        background-color: rgba(17, 25, 40, 0.52);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        width: 99.2%;
+        margin: 0px;
+        overflow: auto;
+    }
+    #img-container img{
+        width: 30%;
+    }
+    #link-container a{
+        font-size: 0.8rem;
+    }
+    .btn{
+        width: 85%;
+    }
+    #good-bye{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+    body{
+        background-image: url('./images/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container{
+        backdrop-filter: blur(0px) saturate(98%);
+        -webkit-backdrop-filter: blur(0px) saturate(98%);
+        background-color: rgba(17, 25, 40, 0.52);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        margin: 0.5rem 5rem;
+        width: 99.2%;
+        overflow: auto;
+    }
+    #img-container img{
+        width: 17%;
+    }
+    #link-container a{
+        font-size: 0.8rem;
+    }
+    .btn{
+        width: 85%;
+    }
+    #good-bye{
+        font-size: 0.8rem;
+    }
+
+
+}
